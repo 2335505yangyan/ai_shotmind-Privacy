@@ -1,1 +1,94 @@
+# Privacy Policy — AI ShotMind
 
+**Developer:** YuKiMind Studio
+**Effective Date:** 2025
+**App:** AI ShotMind – Smart Screenshot Cleaner
+**Package:** com.shotmind.ai.snapclean
+
+---
+
+## 1. Overview
+
+AI ShotMind is designed with privacy as a core principle. All image processing and AI classification is performed entirely on your device. We do not collect, transmit, or store your photos or personal data on any external server.
+
+---
+
+## 2. Information We Do NOT Collect
+
+- We do **not** upload your screenshots or photos to any server
+- We do **not** collect personal information such as your name, email, or account details
+- We do **not** use third-party analytics or advertising SDKs
+- We do **not** require you to create an account
+
+---
+
+## 3. How the App Works
+
+AI ShotMind requests access to your device's photo library solely to:
+
+- Read and analyze screenshots stored on your device
+- Display thumbnails within the app interface
+- Delete screenshots at your explicit request via the system API
+
+All AI processing — including OCR (text recognition) and image classification — runs locally on your device using on-device machine learning models (Google ML Kit). No image data is sent to external servers at any point.
+
+---
+
+## 4. Data Stored Locally
+
+AI ShotMind stores the following data **locally on your device only**:
+
+| Data | Purpose |
+|------|---------|
+| Screenshot metadata (asset ID, file path, classification result) | To display scan results and remember processed items |
+| Saved screenshot records (asset ID only) | To filter previously saved screenshots from future scans |
+
+This data is stored in a local database on your device and is deleted when you uninstall the app.
+
+---
+
+## 5. Permissions Requested
+
+| Permission | Reason |
+|------------|--------|
+| `READ_MEDIA_IMAGES` | Read screenshots for analysis |
+| `READ_EXTERNAL_STORAGE` | Required for Android 8–12 compatibility |
+| `ACCESS_MEDIA_LOCATION` | Access full image metadata |
+| `WRITE_EXTERNAL_STORAGE` | Required to delete photos via system API on older Android versions |
+
+We only request permissions necessary for core functionality. You can revoke permissions at any time in your device settings. Revoking photo access will prevent the app from functioning.
+
+---
+
+## 6. Third-Party Services
+
+AI ShotMind uses the following on-device SDKs:
+
+- **Google ML Kit** (Text Recognition & Image Labeling) — runs entirely on-device, no data is sent to Google through this integration.
+- **Firebase Crashlytics** — collects anonymous crash reports to help us improve stability. This data does not include photos or personal information. See [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
+
+---
+
+## 7. Children's Privacy
+
+AI ShotMind is not directed at children under the age of 13. We do not knowingly collect any information from children.
+
+---
+
+## 8. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.
+
+---
+
+## 9. Contact
+
+If you have any questions about this Privacy Policy, please contact us at:
+
+**Email:** support@yukimind.com
+
+**GitHub:** https://2335505yangyan.github.io/ai_shotmind-Privacy/
+
+---
+
+*This privacy policy was last updated in 2025.*
