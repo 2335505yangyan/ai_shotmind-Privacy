@@ -1,94 +1,180 @@
-# Privacy Policy — AI ShotMind
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — AI ShotMind</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .app-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #eee;
+    }
+    .app-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .app-header .subtitle {
+      color: #888;
+      font-size: 14px;
+    }
+    .meta {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 36px;
+      font-size: 14px;
+      color: #555;
+    }
+    .meta p { margin: 2px 0; }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 36px 0 12px;
+      padding-left: 12px;
+      border-left: 4px solid #4F8EF7;
+    }
+    p { margin-bottom: 12px; color: #444; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; color: #444; }
+    strong { color: #1a1a1a; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+    th {
+      background: #f0f4ff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #333;
+      border: 1px solid #dde3f0;
+    }
+    td {
+      padding: 10px 14px;
+      border: 1px solid #eee;
+      color: #444;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    code {
+      background: #f0f4ff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #3a5bbf;
+    }
+    a { color: #4F8EF7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
 
-**Developer:** YuKiMind Studio
-**Effective Date:** 2025
-**App:** AI ShotMind – Smart Screenshot Cleaner
-**Package:** com.shotmind.ai.snapclean
+    <div class="app-header">
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">AI ShotMind – Smart Screenshot Cleaner</p>
+    </div>
 
----
+    <div class="meta">
+      <p><strong>Developer:</strong> YuKiMind Studio</p>
+      <p><strong>Package:</strong> com.shotmind.ai.snapclean</p>
+      <p><strong>Effective Date:</strong> 2025</p>
+    </div>
 
-## 1. Overview
+    <h2>1. Overview</h2>
+    <p>AI ShotMind is designed with privacy as a core principle. All image processing and AI classification is performed entirely on your device. We do not collect, transmit, or store your photos or personal data on any external server.</p>
 
-AI ShotMind is designed with privacy as a core principle. All image processing and AI classification is performed entirely on your device. We do not collect, transmit, or store your photos or personal data on any external server.
+    <h2>2. Information We Do NOT Collect</h2>
+    <ul>
+      <li>We do <strong>not</strong> upload your screenshots or photos to any server</li>
+      <li>We do <strong>not</strong> collect personal information such as your name, email, or account details</li>
+      <li>We do <strong>not</strong> use third-party analytics or advertising SDKs</li>
+      <li>We do <strong>not</strong> require you to create an account</li>
+    </ul>
 
----
+    <h2>3. How the App Works</h2>
+    <p>AI ShotMind requests access to your device's photo library solely to:</p>
+    <ul>
+      <li>Read and analyze screenshots stored on your device</li>
+      <li>Display thumbnails within the app interface</li>
+      <li>Delete screenshots at your explicit request via the system API</li>
+    </ul>
+    <p>All AI processing — including OCR (text recognition) and image classification — runs locally on your device using on-device machine learning models (Google ML Kit). No image data is sent to external servers at any point.</p>
 
-## 2. Information We Do NOT Collect
+    <h2>4. Data Stored Locally</h2>
+    <p>AI ShotMind stores the following data <strong>locally on your device only</strong>:</p>
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Screenshot metadata (asset ID, file path, classification result)</td><td>To display scan results and remember processed items</td></tr>
+      <tr><td>Saved screenshot records (asset ID only)</td><td>To filter previously saved screenshots from future scans</td></tr>
+    </table>
+    <p>This data is stored in a local database on your device and is deleted when you uninstall the app.</p>
 
-- We do **not** upload your screenshots or photos to any server
-- We do **not** collect personal information such as your name, email, or account details
-- We do **not** use third-party analytics or advertising SDKs
-- We do **not** require you to create an account
+    <h2>5. Permissions Requested</h2>
+    <table>
+      <tr><th>Permission</th><th>Reason</th></tr>
+      <tr><td><code>READ_MEDIA_IMAGES</code></td><td>Read screenshots for analysis</td></tr>
+      <tr><td><code>READ_EXTERNAL_STORAGE</code></td><td>Required for Android 8–12 compatibility</td></tr>
+      <tr><td><code>ACCESS_MEDIA_LOCATION</code></td><td>Access full image metadata</td></tr>
+      <tr><td><code>WRITE_EXTERNAL_STORAGE</code></td><td>Required to delete photos via system API on older Android versions</td></tr>
+    </table>
+    <p>We only request permissions necessary for core functionality. You can revoke permissions at any time in your device settings. Revoking photo access will prevent the app from functioning.</p>
 
----
+    <h2>6. Third-Party Services</h2>
+    <p>AI ShotMind uses the following on-device SDKs:</p>
+    <ul>
+      <li><strong>Google ML Kit</strong> (Text Recognition &amp; Image Labeling) — runs entirely on-device, no data is sent to Google through this integration.</li>
+      <li><strong>Firebase Crashlytics</strong> — collects anonymous crash reports to help us improve stability. This data does not include photos or personal information. See <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</li>
+    </ul>
 
-## 3. How the App Works
+    <h2>7. Children's Privacy</h2>
+    <p>AI ShotMind is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
 
-AI ShotMind requests access to your device's photo library solely to:
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
 
-- Read and analyze screenshots stored on your device
-- Display thumbnails within the app interface
-- Delete screenshots at your explicit request via the system API
+    <h2>9. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:support@yukimind.com">support@yukimind.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://2335505yangyan.github.io/ai_shotmind-Privacy/" target="_blank">https://2335505yangyan.github.io/ai_shotmind-Privacy/</a></li>
+    </ul>
 
-All AI processing — including OCR (text recognition) and image classification — runs locally on your device using on-device machine learning models (Google ML Kit). No image data is sent to external servers at any point.
+    <div class="footer">
+      <p>This privacy policy was last updated in 2025.</p>
+    </div>
 
----
-
-## 4. Data Stored Locally
-
-AI ShotMind stores the following data **locally on your device only**:
-
-| Data | Purpose |
-|------|---------|
-| Screenshot metadata (asset ID, file path, classification result) | To display scan results and remember processed items |
-| Saved screenshot records (asset ID only) | To filter previously saved screenshots from future scans |
-
-This data is stored in a local database on your device and is deleted when you uninstall the app.
-
----
-
-## 5. Permissions Requested
-
-| Permission | Reason |
-|------------|--------|
-| `READ_MEDIA_IMAGES` | Read screenshots for analysis |
-| `READ_EXTERNAL_STORAGE` | Required for Android 8–12 compatibility |
-| `ACCESS_MEDIA_LOCATION` | Access full image metadata |
-| `WRITE_EXTERNAL_STORAGE` | Required to delete photos via system API on older Android versions |
-
-We only request permissions necessary for core functionality. You can revoke permissions at any time in your device settings. Revoking photo access will prevent the app from functioning.
-
----
-
-## 6. Third-Party Services
-
-AI ShotMind uses the following on-device SDKs:
-
-- **Google ML Kit** (Text Recognition & Image Labeling) — runs entirely on-device, no data is sent to Google through this integration.
-- **Firebase Crashlytics** — collects anonymous crash reports to help us improve stability. This data does not include photos or personal information. See [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
-
----
-
-## 7. Children's Privacy
-
-AI ShotMind is not directed at children under the age of 13. We do not knowingly collect any information from children.
-
----
-
-## 8. Changes to This Policy
-
-We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.
-
----
-
-## 9. Contact
-
-If you have any questions about this Privacy Policy, please contact us at:
-
-**Email:** support@yukimind.com
-
-**GitHub:** https://2335505yangyan.github.io/ai_shotmind-Privacy/
-
----
-
-*This privacy policy was last updated in 2025.*
+  </div>
+</body>
+</html>
